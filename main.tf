@@ -18,6 +18,8 @@ resource "aws_subnet" "ip_range_one" {
 
   tags = {
     Name = "Andys-Fake-Company-Range-1"
+    TTL = "72"
+    owner = "Andy James"
   }
 }
 
@@ -27,6 +29,8 @@ resource "aws_subnet" "ip_range_two" {
 
   tags = {
     Name = "Andys-Fake-Company-Range-2"
+    TTL = "72"
+    owner = "Andy James"
   }
 }
 
@@ -36,6 +40,8 @@ resource "aws_subnet" "ip_range_three" {
 
   tags = {
     Name = "Andys-Fake-Company-Range-3"
+    TTL = "72"
+    owner = "Andy James"
   }
 }
 
@@ -45,5 +51,7 @@ resource "aws_subnet" "ip_range_four" {
 
   tags = {
     Name = "Andys-Fake-Company-Range-4"
+    TTL = "72"
+    owner = "Andy James"
   }
 }
