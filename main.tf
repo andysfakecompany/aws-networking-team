@@ -13,7 +13,7 @@ resource "aws_vpc" "andys-fake-company" {
 }
 
 resource "aws_subnet" "ip_range_one" {
-  vpc_id     = "${aws_vpc.main.id}"
+  vpc_id     = "${aws_vpc.andys-fake-company.id}"
   cidr_block = "10.0.1.0/24"
 
   tags = {
@@ -22,7 +22,7 @@ resource "aws_subnet" "ip_range_one" {
 }
 
 resource "aws_subnet" "ip_range_two" {
-  vpc_id     = "${aws_vpc.main.id}"
+  vpc_id     = "${aws_vpc.andys-fake-company.id}"
   cidr_block = "10.0.2.0/24"
 
   tags = {
@@ -31,7 +31,7 @@ resource "aws_subnet" "ip_range_two" {
 }
 
 resource "aws_subnet" "ip_range_three" {
-  vpc_id     = "${aws_vpc.main.id}"
+  vpc_id     = "${aws_vpc.andys-fake-company.id}"
   cidr_block = "10.0.3.0/24"
 
   tags = {
@@ -40,7 +40,7 @@ resource "aws_subnet" "ip_range_three" {
 }
 
 resource "aws_subnet" "ip_range_four" {
-  vpc_id     = "${aws_vpc.main.id}"
+  vpc_id     = "${aws_vpc.andys-fake-company.id}"
   cidr_block = "10.0.4.0/24"
 
   tags = {
