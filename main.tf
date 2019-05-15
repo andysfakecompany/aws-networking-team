@@ -11,3 +11,39 @@ resource "aws_vpc" "andys-fake-company" {
     owner = "Andy James"
   }
 }
+
+resource "aws_subnet" "ip_range_one" {
+  vpc_id     = "${aws_vpc.main.id}"
+  cidr_block = "10.0.1.0/24"
+
+  tags = {
+    Name = "Andys-Fake-Company-Range-1"
+  }
+}
+
+resource "aws_subnet" "ip_range_two" {
+  vpc_id     = "${aws_vpc.main.id}"
+  cidr_block = "10.0.2.0/24"
+
+  tags = {
+    Name = "Andys-Fake-Company-Range-2"
+  }
+}
+
+resource "aws_subnet" "ip_range_three" {
+  vpc_id     = "${aws_vpc.main.id}"
+  cidr_block = "10.0.3.0/24"
+
+  tags = {
+    Name = "Andys-Fake-Company-Range-3"
+  }
+}
+
+resource "aws_subnet" "ip_range_four" {
+  vpc_id     = "${aws_vpc.main.id}"
+  cidr_block = "10.0.4.0/24"
+
+  tags = {
+    Name = "Andys-Fake-Company-Range-4"
+  }
+}
