@@ -55,3 +55,14 @@ resource "aws_subnet" "ip_range_four" {
     owner = "Andy James"
   }
 }
+
+resource "aws_subnet" "ip_range_five" {
+  vpc_id     = "${aws_vpc.andys-fake-company.id}"
+  cidr_block = "10.0.5.0/24"
+
+  tags = {
+    Name = "Andys-Fake-Company-Range-5"
+    TTL = "72"
+    owner = "Andy James"
+  }
+}
