@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "andys-fake-company" {
-  cidr_block       = "10.0.0.0/16"
+  cidr_block       = "10.0.0.1/16"
 
   tags = {
     Name = "Andys-Fake-Company-VPC"
